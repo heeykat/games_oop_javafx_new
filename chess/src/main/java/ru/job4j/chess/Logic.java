@@ -25,7 +25,8 @@ public final class Logic {
             if (figure != null) {
                 for (Cell step : steps) {
                     if (figure.position().equals(step)) {
-                        throw new OccupiedCellException(String.format("The cell in the figure's path is busy %s", step));
+                        throw new OccupiedCellException(
+                                String.format("The cell in the figure's path is busy %s", step));
                     }
                 }
             }
